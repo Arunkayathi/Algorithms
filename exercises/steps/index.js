@@ -37,7 +37,7 @@
 
 //Second Solution
 
-function steps(n,row=0,stair=''){
+/*function steps(n,row=0,stair=''){
    if(n===row){
        return;
    }
@@ -51,6 +51,18 @@ function steps(n,row=0,stair=''){
        stair+=' ';
    }
    steps(n,row,stair);
+}*/
+
+
+//Third Solution
+
+function steps(n){
+
+    for(let i=1;i<=n;i++){
+        let space=' '.repeat(n-i);
+        let hash='#'.repeat(i);
+        console.log(hash+space);
+    }
 }
 
 module.exports = steps;
