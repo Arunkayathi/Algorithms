@@ -13,7 +13,7 @@ test('returns the number of vowels used when they are capitalized', () => {
 });
 
 test('returns the number of vowels used', () => {
-  expect(vowels('abcdefghijklmnopqrstuvwxyz')).toEqual(5);
+  expect(vowels('abcdefaeioughijklmnopqrstuvwxyz')).toEqual(10);
 });
 
 test('returns the number of vowels used', () => {
